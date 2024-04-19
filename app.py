@@ -175,8 +175,10 @@ agent = initialize_agent(
 def main():
     st.set_page_config(page_title="AI research agent", page_icon=":bird:")
 
-   st.header("AI research agent :bird:")
+    st.header("AI research agent :bird:")
     query = st.text_input("Research goal")
+
+
 
     if query:
          st.write("Doing research for ", query)
@@ -186,8 +188,8 @@ def main():
          st.info(result['output'])
 
 
- if __name__ == '__main__':
-     main()
+    if __name__ == '__main__':
+         main()
 
 
 # 5. Set this as an API endpoint via FastAPI
